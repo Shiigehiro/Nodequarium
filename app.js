@@ -1,5 +1,5 @@
 var eco = {fish: [], algue: []};
-var fish_species = {0: ["Mérou", "Thon", "Poisson-Clown"], 1: ["Carpe", "Bar", "Sole"]}
+var fish_espece = {0: ["Mérou", "Thon", "Poisson-Clown"], 1: ["Carpe", "Bar", "Sole"]}
 var turn = 0;
 function init() {
 
@@ -8,7 +8,7 @@ function init() {
 function Fish(p1, p2) {
   this.name = `Fish_${eco.fish.size+1}`;
   this.carnivore = p1.carnivore ? true : false;
-  this.specie = species[this.carnivore ? 1 : 0][Math.Floor((Math.random()*3)+1)];
+  this.espece = fish_espece[this.carnivore ? 1 : 0][Math.Floor((Math.random()*3)+1)];
   this.gender = Math.round(Math.random());
   this.year = 0;
   this.hp = 10;
@@ -75,7 +75,7 @@ function Turn() {
     } else {
       // Reproduction
       let mothers = eco.fish.filter(function(obj) {
-        return obj.specie === fish.specie
+        return obj.espece === fish.espece
       });
       let rand = Math.Floor(Math.random()*mothers.size);
       new Fish(fish, mothers[rand])
