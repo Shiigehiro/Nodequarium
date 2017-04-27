@@ -1,7 +1,15 @@
 # Nodequarium
 [Exercice du Javaquarium](https://zestedesavoir.com/forums/sujet/447/javaquarium/) fait en NODE.js
 
+Avancement actuel : 
+
 Exercice 1.2 : un peu de diversité
+- [x] Rajouter les especes de poisson
+- [x] Rajouter les sexes
+- [x] Stockage des poissons et des algues
+- [x] Systeme et tour
+- [x] Rajouter les types carnivore et herbivores
+- [ ] Faire manger tout les poissons a chaque tours
 
 En fait, des poissons tous identiques, c'est pas très passionnant. Dans le magasin où se fournit monsieur Shingshan, on trouve des poissons carnivores et d'autres herbivores. Il y a six races de poissons : Poissons carnivores : Mérou, Thon, Poisson-clown. Poissons herbivores : Sole, Bar, Carpe. Chaque poisson peut donc manger (une méthode) : selon s'il est carnivore, il mange une algue (paramètre : une algue), ou un autre poisson (paramètre : un poisson quel qu'il soit).
 
