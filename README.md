@@ -3,7 +3,6 @@
 
 Avancement actuel : 
 
-Exercice 1.2 : un peu de diversité
 - [x] Rajouter les especes de poisson
 - [x] Rajouter les sexes
 - [x] Stockage des poissons et des algues
